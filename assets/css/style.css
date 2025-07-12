@@ -26,6 +26,15 @@ a {
   text-decoration: none;
 }
 
+.heading-lv2 {
+  color: #171100;
+  font-family: var(--font-heading);
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 127%;
+  letter-spacing: -0.76px;
+}
+
 .btn {
   display: inline-block;
   min-width: 118px;
@@ -273,4 +282,52 @@ a {
 
 .hero .stats strong:nth-child(2) {
   margin-left: 28px;
+}
+
+/* ==================Popular=========== */
+.popular {
+  padding: 65px 0px;
+  margin-top: 135px;
+}
+
+.popular-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popular-top .desc {
+  margin-top: 16px;
+  width: 458px;
+  color: #5f5b53;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 167%; /* 166.667% */
+  margin-bottom: 0rem;
+}
+
+.popular-top .heading-lv2 {
+  margin: 0rem;
+}
+
+.popular-top .control {
+  display: flex;
+  gap: 18px;
+}
+
+.popular-top .control-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.popular-top .control-btn:hover {
+  background: var(--primary-color);
+  color: #fff;
 }
