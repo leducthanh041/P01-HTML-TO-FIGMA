@@ -33,6 +33,7 @@ a {
   font-weight: 700;
   line-height: 127%;
   letter-spacing: -0.76px;
+  margin: auto;
 }
 
 h3 {
@@ -506,4 +507,57 @@ h3 {
   font-size: 2.6rem;
   font-style: italic;
   line-height: 1.54; /* 153.846% */
+}
+
+/* ==================Features=========== */
+.features {
+  margin-top: 135px;
+  padding: 65px 0px;
+}
+
+.features .body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features .images {
+  gap: 30px;
+  display: flex;
+}
+
+.features .images img {
+  width: 270px;
+  height: 404px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.features .lower {
+  margin-top: 34px;
+}
+
+.features .content {
+  width: 41%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.features .content h2 {
+  margin: 0;
+}
+
+.features .desc {
+  margin-top: 16px;
+  margin-bottom: 0px;
+  color: #5f5b53;
+  font-size: 1.6rem;
+  line-height: 1.75;
+}
+
+.features .cta-btn {
+  width: 137px;
+  height: 50px;
+  margin-top: 32px;
+  background: var(--primary-color);
 }
