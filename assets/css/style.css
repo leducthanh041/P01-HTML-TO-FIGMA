@@ -601,15 +601,21 @@ h3 {
 }
 
 .blogs .blog-list {
+  overflow: hidden; /*Ẩn đi blog-list khác, dùng js*/
   display: flex;
   margin-top: 55px;
   gap: 30px;
 }
 
 .blogs .item {
-  width: 33.33%;
+  flex-shrink: 0; /*Không cho co lại*/
+  width: calc(33.33% - 20px);
   border-radius: 16px;
   background: #fff;
+
+  /* Phần này của js */
+  /* transition: all ease 0.5s;
+  transform: translateX(-100%); */
 }
 
 .blogs .item:hover {
@@ -669,9 +675,30 @@ h3 {
 
 .blogs .item .btn {
   margin-top: 12px;
+  font-size: 1.4rem;
 }
 
 .blogs .item .btn:hover {
   background: var(--primary-color);
+}
+
+.blogs .dots {
+  margin-top: 38px;
+  gap: 6px;
+  display: flex;
+  justify-content: center;
+}
+
+.blogs .dots .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #5f5b53;
+  cursor: pointer;
+}
+
+.blogs .dot.active {
+  background: var(--primary-color);
+  cursor: default;
 }
 /* ==================Footer=========== */
